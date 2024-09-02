@@ -9,6 +9,6 @@ CREATE TABLE websites (
 INSERT INTO websites (siteName, sitePage, siteURL, tags) VALUES ('COSC349 Cloud computing', 'Paper info', 'https://cosc349.cspages.otago.ac.nz/', 'Uni');
 INSERT INTO websites (siteName, sitePage, siteURL, tags) VALUES ('Otago University', 'Main page', 'https://www.otago.ac.nz/', 'Uni');
 INSERT INTO websites (siteName, sitePage, siteURL, tags) VALUES ('Otago University', 'Student page', 'https://www.otago.ac.nz/students/', 'Uni');
-INSERT INTO websites (siteName, SsitPage, siteURL, tags) VALUES ('The Useless Web', 'Home page', 'https://theuselessweb.com/', 'Fun')
+INSERT INTO websites (siteName, sitePage, siteURL, tags) VALUES ('The Useless Web', 'Home page', 'https://theuselessweb.com/', 'Fun')
 
 
