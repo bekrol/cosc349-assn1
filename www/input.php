@@ -45,6 +45,7 @@
     ?>
 
     <a href="database.php">View your collection of web links here</a>
+    <a href="input.php">Add more links here</a>
 
     </center>
 </body>
