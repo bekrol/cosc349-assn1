@@ -19,7 +19,7 @@ th, td {
   <h1>Weblink collection form.</h1>
 
   <p>Collect and store your weblinks via the form below.</p>
-  <p>Add categories, key names and description to help store and manage them</p>
+  <p>Add site name and tags to help manage websites easier</p>
 
   <form action="database.php" method="POST">
   <p>  
