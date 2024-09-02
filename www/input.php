@@ -28,7 +28,7 @@
         $siteUrl = $_REQUEST['siteUrl'];
         $tags = $_REQUEST['tags'];
 
-        $q -> $pdo->query("INSERT INTO websites (siteName, sitePage, siteUrl, tags) VALUES ('$_POST[siteName]', '$_POST[sitePage]', '$_POST[siteUrl]', '$_POST[tags]')");
+        $sql = "INSERT INTO websites (siteName, sitePage, siteUrl, tags) VALUES ('$_POST[siteName]', '$_POST[sitePage]', '$_POST[siteUrl]', '$_POST[tags]')";
 
         if(mysqli_query($conn, $sql)){
             echo "<h3>data stored in a database successfully.</h3>"; 
