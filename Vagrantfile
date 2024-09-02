@@ -95,6 +95,5 @@ Vagrant.configure("2") do |config|
     apt-get install -y docker.io
     adduser vagrant docker
   SHELL
-  end
 
 end
