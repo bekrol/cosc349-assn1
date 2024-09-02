@@ -44,12 +44,12 @@ Vagrant.configure("2") do |config|
     dbserver.vm.provision "shell", path: "build-dbserver-vm.sh"
   end
 
-    config.vm.define "websever" do |webserver|
-    webserver.vm.hostname = "webserver-tools"
+    config.vm.define "reports" do |reports|
+    webserver.vm.hostname = "reports"
     webserver.vm.network "private_network", ip: "192.168.56.13"
     webserver.vm.synced_folder ".", "/vagrant", owner: "vagrant", group: "vagrant", mount_options: ["dmode=775,fmode=777"]
 
-    webserver.vm.provision "shell", path: "build-webserver-tools-vm.sh"
+    webserver.vm.provision "shell", path: "build-reports-vm.sh"
   end
 
 end
