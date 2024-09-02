@@ -44,6 +44,8 @@
         mysqli_close($conn);
     ?>
 
+    <a href="database.php">View your collection of web links here</a>
+
     </center>
 </body>
 
