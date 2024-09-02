@@ -16,12 +16,12 @@ th, td {
 </head>
 
 <body>
-<h1>Database test page</h1>
+<h1>Website collection</h1>
 
 <p>Showing contents of papers table:</p>
 
 <table border="1">
-<tr><th>Paper code</th><th>Paper name</th></tr>
+<tr><th>Site Name</th><th>Site Page</th><th>URL</th></tr>
 
 <?php
  
@@ -34,10 +34,10 @@ $pdo_dsn = "mysql:host=$db_host;dbname=$db_name";
 
 $pdo = new PDO($pdo_dsn, $db_user, $db_passwd);
 
-$q = $pdo->query("SELECT * FROM papers");
+$q = $pdo->query("SELECT * FROM websites");
 
 while($row = $q->fetch()){
-  echo "<tr><td>".$row["code"]."</td><td>".$row["name"]."</td></tr>\n";
+  echo "<tr><td>".$row["siteName"]."</td><td>".$row["sitePage"]."</td></tr><tr><td>".$row["siteUrl"]."</td>\n";
 }
 
 ?>
