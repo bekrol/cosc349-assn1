@@ -34,7 +34,7 @@ Vagrant.configure("2") do |config|
     config.vm.define "webserver" do |webserver|
     webserver.vm.hostname = "webserver"
     webserver.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
-    webserver.vm.network "private_network", ip: "192.168.2.11"
+    webserver.vm.network "private_network", ip: "192.168.56.11"
 
 
   # Create a private network, which allows host-only access to the machine
