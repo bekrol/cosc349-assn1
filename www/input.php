@@ -25,7 +25,7 @@
 
         $bookName = $_REQUEST['bookName'];
         $author = $_REQUEST['author'];
-        $genre
+        $genre = $_REQUEST['genre'];
         $dateFinished = $_REQUEST['dateFinished'];
         $stars = $_REQUEST['stars'];
         $review = $_REQUEST['review'];
