@@ -50,5 +50,6 @@ Vagrant.configure("2") do |config|
     webserver.vm.synced_folder ".", "/vagrant", owner: "vagrant", group: "vagrant", mount_options: ["dmode=775,fmode=777"]
 
     webserver.vm.provision "shell", path: "build-webserver-tools-vm.sh"
+  end
 
 end
