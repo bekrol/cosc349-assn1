@@ -23,17 +23,19 @@
                     . mysqli_connect_error());
                 }
 
-        $siteName = $_REQUEST['siteName'];
-        $sitePage = $_REQUEST['sitePage'];
-        $siteUrl = $_REQUEST['siteUrl'];
-        $tags = $_REQUEST['tags'];
+        $bookName = $_REQUEST['bookName'];
+        $author = $_REQUEST['author'];
+        $genre
+        $dateFinished = $_REQUEST['dateFinished'];
+        $stars = $_REQUEST['stars'];
+        $review = $_REQUEST['review'];
 
-        $sql = "INSERT INTO websites (siteName, sitePage, siteUrl, tags) VALUES ('$_POST[siteName]', '$_POST[sitePage]', '$_POST[siteUrl]', '$_POST[tags]')";
+        $sql = "INSERT INTO books (bookName, author, genre, dateFinished, rating, review) VALUES ('$bookName', '$author', '$genre', '$dateFinished', '$stars', '$review')";
 
         if(mysqli_query($conn, $sql)){
             echo "<h3>data stored in a database successfully.</h3>"; 
 
-            echo nl2br("\n$siteName\n $sitPage\n $siteUrl\n $tags");
+            echo nl2br("\n$bookName\n $sitPage\n $siteUrl\n $tags");
         } else{
             echo "ERROR: Hush! Sorry $sql. " 
                 . mysqli_error($conn);
@@ -43,8 +45,8 @@
         mysqli_close($conn);
     ?>
 
-    <a href="database.php">View your collection of web links here</a>
-    <a href="index.php">Add more links here</a>
+    <a href="database.php">View your Book Keeper here\n</a>
+    <a href="index.php">Add more books here</a>
 
     </center>
 </body>

@@ -1,14 +1,19 @@
-CREATE TABLE websites (
-  webId int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  siteName varchar(100) NOT NULL,
-  sitePage varchar(100) NOT NULL,
-  siteUrl varchar(100) NOT NULL,
-  tags varchar(50) NOT NULL
+CREATE TABLE books (
+  bookID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  bookName varchar(255) NOT NULL,
+  author varchar(255) NOT NULL,
+  genre varchar(255) NOT NULL,
+  dateFinished date NOT NULL,
+  rating int NOT NULL
+  review mediumtext NOT NULL
 );
 
-INSERT INTO websites (siteName, sitePage, siteURL, tags) VALUES ('COSC349 Cloud computing', 'Paper info', 'https://cosc349.cspages.otago.ac.nz/', 'Uni');
-INSERT INTO websites (siteName, sitePage, siteURL, tags) VALUES ('Otago University', 'Main page', 'https://www.otago.ac.nz/', 'Uni');
-INSERT INTO websites (siteName, sitePage, siteURL, tags) VALUES ('Otago University', 'Student page', 'https://www.otago.ac.nz/students/', 'Uni');
-INSERT INTO websites (siteName, sitePage, siteURL, tags) VALUES ('The Useless Web', 'Home page', 'https://theuselessweb.com/', 'Fun')
-
+INSERT INTO books (bookName, author, genre, dateFinished, rating, review) VALUES
+('The Great Gatsby', 'F. Scott Fitzgerald', 'Classic', '2020-01-01', 5, 'This book was amazing!'),
+('A Court of Thorns and Roses', 'Sarah J. Maas', 'Romantasy', '2024-01-01', 5, 'This book was amazing!'),
+('The Hunger Games', 'Suzanne Collins', 'Dystopian', '2020-01-01', 5, 'This book was amazing!'),
+('The Night Circus', 'Erin Morgenstern', 'Fantasy', '2020-01-01', 5, 'This book was amazing!'),
+('The Book Thief', 'Markus Zusak', 'Historical Fiction', '2020-01-01', 5, 'This book was amazing!'),
+('The Nightingale', 'Kristin Hannah', 'Historical Fiction', '2020-01-01', 5, 'This book was amazing!'),
+('The Silent Patient', 'Alex Michaelides', 'Thriller', '2020-01-01', 5, 'This book was amazing!');
 
