@@ -21,7 +21,7 @@ th, td {
 <p>Showing contents of papers table:</p>
 
 <table border="1">
-<tr><th>Site Name</th><th>Site Page</th><th>URL</th></tr>
+<tr><th>Site Name</th><th>Site Page</th><th>URL</th><th>Tags</th></tr>
 
 <?php
  
@@ -37,7 +37,7 @@ $pdo = new PDO($pdo_dsn, $db_user, $db_passwd);
 $q = $pdo->query("SELECT * FROM websites");
 
 while($row = $q->fetch()){
-  echo "<tr><td>".$row["siteName"]."</td><td>".$row["sitePage"]."</td></tr><tr><td>".$row["siteUrl"]."</td>\n";
+  echo "<tr><td>".$row["siteName"]."</td><td>".$row["sitePage"]."</td><td>".$row["siteUrl"]."</td><td>".$row["tags"]."</td></tr>\n";
 }
 
 $siteName = $_REQUEST['siteName'];
