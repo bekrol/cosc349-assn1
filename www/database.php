@@ -16,12 +16,12 @@ th, td {
 </head>
 
 <body>
-<h1>Website collection</h1>
+<h1>THE BOOK KEEPER</h1>
 
-<p>Showing contents of papers table:</p>
+<p>Showing all of the books you have read:</p>
 
 <table border="1">
-<tr><th>Site Name</th><th>Page Name</th><th>URL</th><th>Tags</th></tr>
+<tr><th>Book title</th><th>Author</th><th>Genre</th><th>Date finished</th><th>Rating</th><th>Review</th></tr>
 
 <?php
  
@@ -34,10 +34,10 @@ $pdo_dsn = "mysql:host=$db_host;dbname=$db_name";
 
 $pdo = new PDO($pdo_dsn, $db_user, $db_passwd);
 
-$q = $pdo->query("SELECT * FROM websites");
+$q = $pdo->query("SELECT * FROM books");
 
 while($row = $q->fetch()){
-  echo "<tr><td>".$row["siteName"]."</td><td>".$row["sitePage"]."</td><td>".$row["siteUrl"]."</td><td>".$row["tags"]."</td></tr>\n";
+  echo "<tr><td>".$row["bookName"]."</td><td>".$row["author"]."</td><td>".$row["genre"]."</td><td>".$row["dateFinished"]."</td><td>".$row["rating"]."</td><td>".$row["review"]."</td></tr>\n";
 }
 
 ?>
