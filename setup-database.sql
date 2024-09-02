@@ -1,9 +1,9 @@
 CREATE TABLE websites (
   webId int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  siteName varchar(20) NOT NULL,
-  sitePage varchar(20),
-  siteUrl varchar(50) NOT NULL,
-  tags varchar(20)
+  siteName varchar(100) NOT NULL,
+  sitePage varchar(100),
+  siteUrl varchar(100) NOT NULL,
+  tags varchar(50)
 );
 
 INSERT INTO websites (siteName, sitePage, siteURL, tags) VALUES ('COSC349 Cloud computing', 'Paper info', 'https://cosc349.cspages.otago.ac.nz/', 'Uni');
