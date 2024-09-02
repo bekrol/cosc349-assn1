@@ -21,7 +21,7 @@ th, td {
   <p>Collect and store your weblinks via the form below.</p>
   <p>Add site name and tags to help manage websites easier</p>
 
-  <form action="database.php" method="POST">
+  <form action="input.php" method="POST">
   <p>  
     <label for="siteName">Site name:</label>
     <input type="text" name="siteName" id="siteName" required><br>
@@ -37,7 +37,7 @@ th, td {
     <label for="tags">Tags:</label>
     <input type="text" name="tags" id="tags" required><br>
   </p>
-  
+
     <input type="submit" value="Submit">  
 
   </form>
