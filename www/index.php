@@ -49,6 +49,7 @@
   </form>
   
   <a href="database.php">View your Book-Keeper here</a>
+  <a href="reports/index.php">View the reports here</a>
 
 </body>
 </html>
