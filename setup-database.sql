@@ -1,5 +1,3 @@
-DELETE TABLE IF EXISTS websites;
-
 CREATE TABLE websites (
   webId int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   siteName varchar(20) NOT NULL,
