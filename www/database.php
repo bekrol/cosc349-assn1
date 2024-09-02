@@ -21,7 +21,7 @@ th, td {
 <p>Showing contents of papers table:</p>
 
 <table border="1">
-<tr><th>Site Name</th><th>Site Page</th><th>URL</th><th>Tags</th></tr>
+<tr><th>Site Name</th><th>Page Name</th><th>URL</th><th>Tags</th></tr>
 
 <?php
  
