@@ -27,9 +27,17 @@ th, td {
     <input type="text" name="siteName" id="siteName" required><br>
   </p>
   <p>
+    <label for="sitePage">Page name:</label>
+    <input type="text" name="sitePage" id="sitePage" required><br>
+  <p>
     <label for="siteURL">Site URL:</label>
     <input type="url" name="siteURL" id="siteURL" required><br>
   </p>
+  <p>
+    <label for="tags">Tags:</label>
+    <input type="text" name="tags" id="tags" required><br>
+  </p>
+  
     <input type="submit" value="Submit">  
 
   </form>
