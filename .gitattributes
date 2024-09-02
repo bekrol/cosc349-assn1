@@ -7,4 +7,5 @@
 
 setup-database.sql text eol=lf
 test-website.conf text eol=lf
+test-reports.conf text eol=lf
 
