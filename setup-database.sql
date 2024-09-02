@@ -2,15 +2,18 @@ CREATE TABLE books (
   bookID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   bookName varchar(255) NOT NULL,
   author varchar(255) NOT NULL,
+  genre varchar(255) NOT NULL,
   dateFinished date NOT NULL,
   rating int NOT NULL
   review mediumtext NOT NULL
 );
 
-INSERT INTO books (bookName, author, dateFinished, rating, review) VALUES
-('The Great Gatsby', 'F. Scott Fitzgerald', '2020-01-01', 5, 'This book was amazing!'),
-('The Catcher in the Rye', 'J.D. Salinger', '2020-01-02', 4, 'This book was pretty good.'),
-('To Kill a Mockingbird', 'Harper Lee', '2020-01-03', 5, 'This book was amazing!'),
-('1984', 'George Orwell', '2020-01-04', 3, 'This book was okay.'),
-('Pride and Prejudice', 'Jane Austen', '2020-01-05', 4, 'This book was pretty good.');
+INSERT INTO books (bookName, author, genre, dateFinished, rating, review) VALUES
+('The Great Gatsby', 'F. Scott Fitzgerald', 'Classic', '2020-01-01', 5, 'This book was amazing!'),
+('A Court of Thorns and Roses', 'Sarah J. Maas', 'Romantasy', '2024-01-01', 5, 'This book was amazing!'),
+('The Hunger Games', 'Suzanne Collins', 'Dystopian', '2020-01-01', 5, 'This book was amazing!'),
+('The Night Circus', 'Erin Morgenstern', 'Fantasy', '2020-01-01', 5, 'This book was amazing!'),
+('The Book Thief', 'Markus Zusak', 'Historical Fiction', '2020-01-01', 5, 'This book was amazing!'),
+('The Nightingale', 'Kristin Hannah', 'Historical Fiction', '2020-01-01', 5, 'This book was amazing!'),
+('The Silent Patient', 'Alex Michaelides', 'Thriller', '2020-01-01', 5, 'This book was amazing!');
 
