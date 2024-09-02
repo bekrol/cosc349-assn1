@@ -1,14 +1,16 @@
-CREATE TABLE websites (
-  webId int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  siteName varchar(100) NOT NULL,
-  sitePage varchar(100) NOT NULL,
-  siteUrl varchar(100) NOT NULL,
-  tags varchar(50) NOT NULL
+CREATE TABLE books (
+  bookID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  bookName varchar(255) NOT NULL,
+  author varchar(255) NOT NULL,
+  dateFinished date NOT NULL,
+  rating int NOT NULL
+  review mediumtext NOT NULL
 );
 
-INSERT INTO websites (siteName, sitePage, siteURL, tags) VALUES ('COSC349 Cloud computing', 'Paper info', 'https://cosc349.cspages.otago.ac.nz/', 'Uni');
-INSERT INTO websites (siteName, sitePage, siteURL, tags) VALUES ('Otago University', 'Main page', 'https://www.otago.ac.nz/', 'Uni');
-INSERT INTO websites (siteName, sitePage, siteURL, tags) VALUES ('Otago University', 'Student page', 'https://www.otago.ac.nz/students/', 'Uni');
-INSERT INTO websites (siteName, sitePage, siteURL, tags) VALUES ('The Useless Web', 'Home page', 'https://theuselessweb.com/', 'Fun')
-
+INSERT INTO books (bookName, author, dateFinished, rating, review) VALUES
+('The Great Gatsby', 'F. Scott Fitzgerald', '2020-01-01', 5, 'This book was amazing!'),
+('The Catcher in the Rye', 'J.D. Salinger', '2020-01-02', 4, 'This book was pretty good.'),
+('To Kill a Mockingbird', 'Harper Lee', '2020-01-03', 5, 'This book was amazing!'),
+('1984', 'George Orwell', '2020-01-04', 3, 'This book was okay.'),
+('Pride and Prejudice', 'Jane Austen', '2020-01-05', 4, 'This book was pretty good.');
 
