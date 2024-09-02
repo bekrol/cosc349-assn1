@@ -35,6 +35,7 @@ Vagrant.configure("2") do |config|
     webserver.vm.hostname = "webserver"
     webserver.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
     webserver.vm.network "private_network", ip: "192.168.56.11"
+    webserver.vm.synced_folder ".", "/vagrant", owner: "vagrant", group: "vagrant", mount_options: ["dmode=775,fmode=777"]
 
 
   # Create a private network, which allows host-only access to the machine
@@ -85,6 +86,7 @@ Vagrant.configure("2") do |config|
     config.vm.define "dbserver" do |dbserver|
     dbserver.vm.hostname = "dbserver"
     dbserver.vm.network "private_network", ip: "192.168.56.11"
+    dbserver.vm.synced_folder ".", "/vagrant", owner: "vagrant", group: "vagrant", mount_options: ["dmode=775,fmode=777"]
 
 
     dbserver.vm.provision "shell", path: "build-dbserver-vm.sh"
