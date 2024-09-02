@@ -33,8 +33,7 @@
         if(mysqli_query($conn, $sql)){
             echo "<h3>data stored in a database successfully.</h3>"; 
 
-            echo nl2br("\n$siteName\n $sitPage\n "
-                . "$siteUrl\n $tags");
+            echo nl2br("\n$siteName\n $sitPage\n $siteUrl\n $tags");
         } else{
             echo "ERROR: Hush! Sorry $sql. " 
                 . mysqli_error($conn);
@@ -45,7 +44,7 @@
     ?>
 
     <a href="database.php">View your collection of web links here</a>
-    <a href="input.php">Add more links here</a>
+    <a href="index.php">Add more links here</a>
 
     </center>
 </body>
