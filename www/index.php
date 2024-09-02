@@ -16,12 +16,25 @@ th, td {
 </head>
 
 <body>
-<h1>Weblink collection form.</h1>
+  <h1>Weblink collection form.</h1>
 
-<p>Collect and store your weblinks via the form below.</p>
-<p>Add categories, key names and description to help store and manage them</p>
+  <p>Collect and store your weblinks via the form below.</p>
+  <p>Add categories, key names and description to help store and manage them</p>
 
-<a href="database.php">View your collection of web links here</a>
+  <form action="submit.php" method="POST">
+  <p>  
+    <label for="siteName">Site name:</label>
+    <input type="text" name="siteName" id="siteName" required><br>
+  </p>
+  <p>
+    <label for="siteURL">Site URL:</label>
+    <input type="url" name="siteURL" id="siteURL" required><br>
+  </p>
+    <input type="submit" value="Submit">  
+
+  </form>
+  
+  <a href="database.php">View your collection of web links here</a>
 
 </body>
 </html>
