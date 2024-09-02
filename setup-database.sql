@@ -4,8 +4,8 @@ CREATE TABLE books (
   author varchar(255) NOT NULL,
   genre varchar(255) NOT NULL,
   dateFinished date NOT NULL,
-  rating int NOT NULL
-  review mediumtext NOT NULL
+  rating int NOT NULL,
+  review text NOT NULL
 );
 
 INSERT INTO books (bookName, author, genre, dateFinished, rating, review) VALUES
