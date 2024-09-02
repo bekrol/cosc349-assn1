@@ -23,17 +23,17 @@
                     . mysqli_connect_error());
                 }
 
-        $siteName = $_REQUEST['siteName'];
-        $sitePage = $_REQUEST['sitePage'];
-        $siteUrl = $_REQUEST['siteUrl'];
-        $tags = $_REQUEST['tags'];
+        $bookName = $_REQUEST['bookName'];
+        $author = $_REQUEST['author'];
+        $dateFinished = $_REQUEST['dateFinished'];
+        $stars = $_REQUEST['stars'];
+        $review = $_REQUEST['review'];
 
-        $sql = "INSERT INTO websites (siteName, sitePage, siteUrl, tags) VALUES ('$_POST[siteName]', '$_POST[sitePage]', '$_POST[siteUrl]', '$_POST[tags]')";
-
+        
         if(mysqli_query($conn, $sql)){
             echo "<h3>data stored in a database successfully.</h3>"; 
 
-            echo nl2br("\n$siteName\n $sitPage\n $siteUrl\n $tags");
+            echo nl2br("\n$bookName\n $sitPage\n $siteUrl\n $tags");
         } else{
             echo "ERROR: Hush! Sorry $sql. " 
                 . mysqli_error($conn);
