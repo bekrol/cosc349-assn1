@@ -14,11 +14,11 @@
 
   <form action="input.php" method="POST">
   <p>  
-    <label for="bookName">Site name:</label>
+    <label for="bookName">Book title:</label>
     <input type="text" name="bookName" id="bookName" required><br>
   </p>
   <p>
-    <label for="author">Page name:</label>
+    <label for="author">Author:</label>
     <input type="text" name="author" id="author" required><br>
   </p>
   <p>
@@ -26,11 +26,11 @@
     <input type="text" name="genre" id="genre" required><br>
   </p>
   <p>
-    <label for="dateFinished">Site URL:</label>
+    <label for="dateFinished">Date finished:</label>
     <input type="date" name="dateFinished" id="dateFinished" required><br>
   </p>
   <p>
-    <label for="stars">Tags:</label>
+    <label for="stars">Stars:</label>
     <select id="stars" name="stars">
       <option value="1">1 Star</option>
       <option value="2">2 Stars</option>
