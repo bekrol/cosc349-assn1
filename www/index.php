@@ -20,6 +20,11 @@
   <p>
     <label for="author">Page name:</label>
     <input type="text" name="author" id="author" required><br>
+  </p>
+  <p>
+    <label for="genre">Genre:</label>
+    <input type="text" name="genre" id="genre" required><br>
+  </p>
   <p>
     <label for="dateFinished">Site URL:</label>
     <input type="date" name="dateFinished" id="dateFinished" required><br>
