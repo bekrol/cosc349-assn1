@@ -21,7 +21,7 @@ th, td {
   <p>Collect and store your weblinks via the form below.</p>
   <p>Add categories, key names and description to help store and manage them</p>
 
-  <form action="submit.php" method="POST">
+  <form action="database.php" method="POST">
   <p>  
     <label for="siteName">Site name:</label>
     <input type="text" name="siteName" id="siteName" required><br>
