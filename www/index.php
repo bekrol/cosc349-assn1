@@ -31,7 +31,7 @@ th, td {
     <input type="text" name="sitePage" id="sitePage" required><br>
   <p>
     <label for="siteURL">Site URL:</label>
-    <input type="url" name="siteURL" id="siteURL" required><br>
+    <input type="text" name="siteURL" id="siteURL" required><br>
   </p>
   <p>
     <label for="tags">Tags:</label>
