@@ -45,8 +45,8 @@
         mysqli_close($conn);
     ?>
 
-    <a href="database.php">View your collection of web links here</a>
-    <a href="index.php">Add more links here</a>
+    <a href="database.php">View your Book Keeper here\n</a>
+    <a href="index.php">Add more books here</a>
 
     </center>
 </body>
