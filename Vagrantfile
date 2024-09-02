@@ -90,5 +90,11 @@ Vagrant.configure("2") do |config|
     dbserver.vm.provision "shell", path: "build-dbserver-vm.sh"
   end
 
+    config.vm.provision "shell", inline: <<-SHELL
+    apt-get update
+    apt-get install -y docker.io
+    adduser vagrant docker
+  SHELL
+  end
 
 end
