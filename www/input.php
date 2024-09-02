@@ -25,11 +25,13 @@
 
         $bookName = $_REQUEST['bookName'];
         $author = $_REQUEST['author'];
+        $genre
         $dateFinished = $_REQUEST['dateFinished'];
         $stars = $_REQUEST['stars'];
         $review = $_REQUEST['review'];
 
-        
+        $sql = "INSERT INTO books (bookName, author, genre, dateFinished, rating, review) VALUES ('$bookName', '$author', '$genre', '$dateFinished', '$stars', '$review')";
+
         if(mysqli_query($conn, $sql)){
             echo "<h3>data stored in a database successfully.</h3>"; 
 
