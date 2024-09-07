@@ -8,10 +8,10 @@ sudo apt-get upgrade -y
 sudo apt-get install -y python3 python3-pip python3-venv
 
 # Create a Python virtual environment for the reporting tool
-python3 -m venv /home/vagrant/reporting_env
+python3 -m venv vagrant/reporting_env
 
 # Activate the virtual environment and install required Python packages
-source /home/vagrant/reporting_env/bin/activate
+source vagrant/reporting_env/bin/activate
 pip install pandas matplotlib seaborn flask sqlalchemy
 
 # Install other tools if needed
