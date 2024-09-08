@@ -48,7 +48,7 @@
 
   </form>
   
-  <a href="database.php">View your Book-Keeper here</a>
+  <a href="http://192.168.56.12">View your Book-Keeper here</a>
   <a href="http://192.168.56.13">View the your Booke-Keeper statistics here</a>
 
 </body>
