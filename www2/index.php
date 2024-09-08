@@ -76,21 +76,6 @@
             <?php } ?>
         </table>
 
-        <!-- Count of Each Star Rating (1-5) -->
-        <h2>Count of Each Star Rating</h2>
-        <table border="1">
-            <tr>
-                <th>Stars</th>
-                <th>Total Count</th>
-            </tr>
-            <?php while ($row = $result_star_count->fetch_assoc()) { ?>
-                <tr>
-                    <td><?php echo htmlspecialchars($row['stars']); ?></td>
-                    <td><?php echo htmlspecialchars($row['total_stars']); ?></td>
-                </tr>
-            <?php } ?>
-        </table>
-
 </body>
 </html>
 
