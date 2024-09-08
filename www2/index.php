@@ -36,6 +36,10 @@
             // Top 5 authors read
             $sql_top_authors = "SELECT author, COUNT(*) AS total_author FROM books GROUP BY author ORDER BY total_author DESC LIMIT 5";
             $result_top_authors = $conn->query($sql_top_authors);
+            
+            // Find 5 star books
+            $sql_5_stars = "SELECT bookName, author, genre as five_stars FROM books GROUP BY author WHERE stars == 5";
+            $result_5_stars = $conn->query($sql_5_stars);
 
             // Select all books in database
             $sql_all_books = "SELECT * FROM books";
@@ -78,6 +82,24 @@
             <?php } ?>
         </table>
 
+        <!-- 5 Star Books -->
+        <h2>5 Star Books</h2>
+        <table border="1">
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+            </tr>
+            <?php while ($row = $result_5_stars->fetch_assoc()) { ?>
+                <tr>
+                    <td><?php echo htmlspecialchars($row['bookName']); ?></td>
+                    <td><?php echo htmlspecialchars($row['author']); ?></td>
+                    <td><?php echo htmlspecialchars($row['genre']); ?></td>
+                </tr>
+            <?php } ?>
+        </table>
+
+        <!-- All books -->
         <h2> Complete list of all books read</h2>
         <table border="1">
             <tr><th>Book title</th><th>Author</th><th>Genre</th><th>Date finished</th><th>Rating</th><th>Review</th></tr>
