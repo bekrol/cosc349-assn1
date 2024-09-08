@@ -4,11 +4,15 @@
 
 The Book Keeper application allows the user to store books that they have read in a database. It also shows you insights into the types of books you read.
 
+## Downloads
+
 To run the Book Keeper application ensure that the following are downloaded:
 
 Vagrant:
 
 VirtualBox:
+
+## Running the application
 
 To use the application:
 
