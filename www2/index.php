@@ -37,9 +37,11 @@
             $sql_top_authors = "SELECT author, COUNT(*) AS total_author FROM books GROUP BY author ORDER BY total_author DESC LIMIT 5";
             $result_top_authors = $conn->query($sql_top_authors);
 
-            // Count of each star rating (1-5)
-            $sql_star_count = "SELECT stars, COUNT(*) AS total_stars FROM books GROUP BY stars";
-            $result_star_count = $conn->query($sql_star_count);
+            // Select all books in database
+            $sql_all_books = "SELECT * FROM books";
+            $result_all_books = $conn->query($sql_all_books);
+
+
         ?>
 
         <!-- Total Count of Books Read -->
@@ -75,6 +77,18 @@
                 </tr>
             <?php } ?>
         </table>
+
+        <h2> Complete list of all books read</h2>
+        <table border="1">
+            <tr><th>Book title</th><th>Author</th><th>Genre</th><th>Date finished</th><th>Rating</th><th>Review</th></tr>
+
+            <?php
+                while($row = $result_all_books->fetch_assoc()){
+                echo "<tr><td>".$row["bookName"]."</td><td>".$row["author"]."</td><td>".$row["genre"]."</td><td>".$row["dateFinished"]."</td><td>".$row["rating"]."</td><td>".$row["review"]."</td></tr>\n";
+                }
+
+            ?>
+            </table>
 
         <a href="index.php">Add more books here</a>
 
