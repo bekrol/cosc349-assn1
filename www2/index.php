@@ -30,7 +30,7 @@
             $total_books = $result_total_books->fetch_assoc()['total_books'];
 
             // Total count of each genre read
-            $sql_total_genre = "SELECT genre, COUNT(*) AS total_genre FROM books GROUP BY genre";
+            $sql_total_genre = "SELECT genre, COUNT(*) AS total_genre FROM books GROUP BY genre ORDER BY total_genre DESC";
             $result_total_genre = $conn->query($sql_total_genre);
 
             // Top 5 authors read
