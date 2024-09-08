@@ -45,7 +45,7 @@
         mysqli_close($conn);
     ?>
 
-    <a href="database.php">View your Book Keeper here\n</a>
+    <a href="http://192.168.56.13">View your Booke-Keeper here</a>
     <a href="index.php">Add more books here</a>
 
     </center>
