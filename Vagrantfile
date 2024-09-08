@@ -45,12 +45,12 @@ Vagrant.configure("2") do |config|
   end
 
     config.vm.define "webserver2" do |webserver2|
-    dbserver.vm.hostname = "dbserver"
-    dbserver.vm.network "private_network", ip: "192.168.56.13"
-    dbserver.vm.synced_folder ".", "/vagrant", owner: "vagrant", group: "vagrant", mount_options: ["dmode=775,fmode=777"]
+    webserver2.vm.hostname = "webserver2"
+    webserver2.vm.network "private_network", ip: "192.168.56.13"
+    webserver2.vm.synced_folder ".", "/vagrant", owner: "vagrant", group: "vagrant", mount_options: ["dmode=775,fmode=777"]
   
   
-    dbserver.vm.provision "shell", path: "build-webserver2-vm.sh"  
+    webserver2.vm.provision "shell", path: "build-webserver2-vm.sh"  
   end
 
 end
