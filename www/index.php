@@ -49,7 +49,7 @@
   </form>
   
   <a href="database.php">View your Book-Keeper here</a>
-  <a href=".../.../index.php">View the your Booke-Keeper statistics here</a>
+  <a href="/stats.php">View the your Booke-Keeper statistics here</a>
 
 </body>
 </html>
