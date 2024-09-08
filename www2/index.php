@@ -76,6 +76,8 @@
             <?php } ?>
         </table>
 
+        <a href="index.php">Add more books here</a>
+
 </body>
 </html>
 
