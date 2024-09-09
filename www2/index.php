@@ -112,7 +112,7 @@
             ?>
             </table>
 
-        <a href="index.php">Add more books here</a>
+        <a href="http://127.0.0.1:8080/">Add more books here</a>
 
 </body>
 </html>
