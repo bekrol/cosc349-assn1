@@ -17,7 +17,7 @@ INSERT INTO books (bookName, author, genre, dateFinished, rating, review) VALUES
 ('The Rage of Dragons', 'Evan Winter', 'Fantasy', '2024-06-24', 5, 'Fast paced and very exciting. A lot of action and great characters'),
 ('The Song of Achilles', ' Madeline Miller', 'Historical Fiction', '2023-06-08', 5, 'A lovely perspective of a mythology classic'),
 ('Circe', 'Madeline Miller', 'Historical Fiction', '2023-11-05', 4, 'A little bit slow but beautiful character development'),
-('Before the Coffee Gets Cold', 'Toshikazu Kawaguchi', '2023-05-09', 3, 'A comforting story'),
+('Before the Coffee Gets Cold', 'Toshikazu Kawaguchi', 'Urban Fiction', '2023-05-09', 3, 'A comforting story'),
 ('Testament', 'Wilbur Smith', 'Historical Fiction', '2023-12-10', 4, 'Exciting and fun - want to read the other books in the series'),
 ('The Silent Patient', 'Alex Michaelides', 'Thriller', '2024-05-09', 4, 'The twist at the end of the book left my jaw on the floor!');
 
