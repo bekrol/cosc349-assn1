@@ -12,6 +12,7 @@
 
   <p>Fill out the form below to add a book to your collection</p>
 
+  <!-- Form that allows user to input data into the books table-->
   <form action="input.php" method="POST">
   <p>  
     <label for="bookName">Book title:</label>
