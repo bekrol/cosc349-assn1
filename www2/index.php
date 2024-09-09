@@ -38,7 +38,7 @@
             $result_top_authors = $conn->query($sql_top_authors);
             
             // Find 5 star books
-            $sql_5_stars = "SELECT bookName, author, genre as five_stars FROM books GROUP BY author WHERE stars == 5";
+            $sql_5_stars = "SELECT bookName, author, genre from books WHERE rating=5";
             $result_5_stars = $conn->query($sql_5_stars);
 
             // Select all books in database
