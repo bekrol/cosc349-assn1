@@ -27,5 +27,5 @@ and store somewhere on local computer that is easily accessible
 Open terminal or cmd line and navigate to the directory where there repo is stored.
 Run the command: vagrant up
 
-Access to the application can be found at: http://127.0.0.1:8080
+Access to the application can be found at: http://127.0.0.1:8081
 
