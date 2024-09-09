@@ -14,7 +14,7 @@ INSERT INTO books (bookName, author, genre, dateFinished, rating, review) VALUES
 ('The Hunger Games', 'Suzanne Collins', 'Dystopian', '2023-10-5', 5, 'This book was amazing!'),
 ('The Night Circus', 'Erin Morgenstern', 'Fantasy', '2023-9-12', 5, 'This book was amazing!'),
 ('Throne of Glasss', 'Sarah J. Maas', 'Fantasy', '2024-07-04', 2, 'A bit boring, and the main character was not great'),
-('The Rage of Dragons', 'Evan Winter', 'Fantasy', '2024-24-06', 5, 'Fast paced and very exciting. A lot of action and great characters'),
+('The Rage of Dragons', 'Evan Winter', 'Fantasy', '2024-06-24', 5, 'Fast paced and very exciting. A lot of action and great characters'),
 ('The Song of Achilles', 'Madeline Miller', 'Historical Fiction', '2023-06-08', 5, 'A lovely perspective of a mythology classic'),
 ('Circe', 'Madeline Miller', 'Historical Fiction', '2023-11-05', 4, 'A little bit slow but beautiful character development'),
 ('Before the Coffee Gets Cold', 'Toshikazu Kawaguchi', 'Urban Fiction', '2023-05-09', 3, 'A comforting story'),
