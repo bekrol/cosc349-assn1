@@ -7,7 +7,7 @@
     <center>
         <h1>YOUR BOOK KEEPER</h1>
 
-        <p> Here is some insight into the books you ahve read and stored in your Book Keeper</p>
+        <p> Here is some insight into the books you have read and stored in your Book Keeper</p>
 
         <?php
     
